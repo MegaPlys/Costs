@@ -13,8 +13,9 @@ import styles from "./Projects.module.css"
 
 function Projects() {
     // const pra salvar os projetos
-    const [projects, setProjects] = useState([])
-    const [removeLoading, setRemoveLoading] = useState(false)
+    const [projects, setProjects] = useState([]);
+    const [removeLoading, setRemoveLoading] = useState(false);
+    const [projectMessage, setProjectMessage] = useState('')
 
     const location = useLocation()
 
@@ -44,6 +45,21 @@ function Projects() {
         }, 300)
     }, [])
 
+    function removeProject(id) { // remover projeto do front end
+
+        fetch(`http://localhost:5000/projects/${id}`,{
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        }).then((resp) => resp.json())
+        .then(() => { // remover do backend
+            setProjects(projects.filter((project) => project.id !== id));
+            setProjectMessage('Projeto removido com sucesso');
+        })
+        .catch((err) => console.log(err));
+    }
+
     return (
         <div className={styles.project_container}>
             <div className={styles.tittle_container}>
@@ -52,6 +68,7 @@ function Projects() {
                 <LinkButton to="/newproject" text="Criar Projeto" />  
             </div>
             {message && <Message type="sucess" msg={message} />}
+            {projectMessage && <Message type="sucess" msg={projectMessage} />}
 
             { /* Área de todos os projetos listados */ }
             <Container customClass="start">
@@ -62,6 +79,7 @@ function Projects() {
                     budget={project.budget}
                     category={project.category.name}
                     key={project.id}
+                    handleRemove={removeProject}
                 />)}
                 {/* svg loading aqui */}
                 {!removeLoading && <Loading />}

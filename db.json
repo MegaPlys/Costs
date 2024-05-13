@@ -23,34 +23,12 @@
       "services": []
     },
     {
-      "id": "2f98",
+      "id": "958f",
+      "name": "projeto dev",
+      "budget": "1000",
       "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "name": "projeto design",
-      "budget": "9999",
-      "cost": 0,
-      "services": []
-    },
-    {
-      "id": "49e8",
-      "name": "projeto com nome meramente grande só para ver o quanto alinha no h4",
-      "budget": "99999999999999999999999",
-      "category": {
-        "id": "4",
-        "name": "Planejamento"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
-      "id": "7fa2",
-      "name": "teu pai ",
-      "budget": "15000",
-      "category": {
-        "id": "3",
-        "name": "Design"
+        "id": "2",
+        "name": "Desenvolvimento"
       },
       "cost": 0,
       "services": []
