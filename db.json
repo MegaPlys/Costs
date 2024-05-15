@@ -1,9 +1,9 @@
 {
   "projects": [
     {
-      "id": "3b28",
-      "name": "Projetão",
-      "budget": "15000",
+      "id": "da04",
+      "name": "teste ",
+      "budget": "1000",
       "category": {
         "id": "1",
         "name": "Infra"
@@ -12,20 +12,9 @@
       "services": []
     },
     {
-      "id": "fb08",
-      "name": "projeto desenvolvimento",
-      "budget": "1000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
-      "id": "958f",
-      "name": "projeto dev",
-      "budget": "1000",
+      "id": "3c36",
+      "name": "testando 123",
+      "budget": "10",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"

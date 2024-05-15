@@ -6,6 +6,7 @@ import { BsPencil, BsFillTrashFill } from "react-icons/bs"
 
 function ProjectCard({id, name, budget, category, handleRemove}) {
 
+    // Função para lidar com a remoção do projeto
     const remove = (e) => {
         e.preventDefault()
         handleRemove(id)

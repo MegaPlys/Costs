@@ -8,8 +8,12 @@ import styles from './ProjectForm.module.css'
 
 function ProjectForm({ handleSubmit, btnText, projectData}) {
 
+    // Estado para armazenar as categorias disponíveis
     const [categories, setCategories] = useState([])
+    // Estado para armazenar os dados do projeto, inicializando com projectData ou um objeto vazio
     const [project, setProject] = useState(projectData || {})
+
+    // Hook useEffect para buscar as categorias da API quando o componente é montado
     useEffect(() => {
         fetch("http://localhost:5000/categories", {
             method: "GET",
