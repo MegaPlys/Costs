@@ -3,7 +3,7 @@
     {
       "id": "3c36",
       "name": "testando 1234",
-      "budget": "10",
+      "budget": "10000",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"

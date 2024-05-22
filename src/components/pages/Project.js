@@ -18,6 +18,9 @@ function Project() {
     // Define o estado para controlar a exibição do formulário de edição
     const [showProjectForm, setShowProjectForm] = useState(false)
 
+
+    const [showServiceForm, setShowServiceForm] = useState(false)
+
      // Define o estado para mensagens de feedback
     const [message, setMessage] = useState('')
     const [type, setType] = useState('')
@@ -74,6 +77,11 @@ function Project() {
 
     }
 
+    function toggleServiceForm() {
+
+        setShowServiceForm(!showServiceForm)
+    }
+
     return (
         <>
         {project.name ? (
@@ -107,6 +115,19 @@ function Project() {
                         </div>
                     )}
                 </div>
+                <div className={styles.service_form_container}>
+                    <h2>Adicione um serviço:</h2>
+                    <button className={styles.btn} onClick={toggleServiceForm}>
+                        {!showServiceForm ? 'Adicionar serviço' : 'Fechar'}
+                    </button>
+                    <div className={styles.project_info}>
+                        {showServiceForm && <div>Form do serviço</div>}
+                    </div> 
+                </div>
+                <h2>Serviços</h2>
+                <Container customClass="start">
+                    <p>itens de serviço</p>
+                </Container>
             </Container>
         </div>
         ) : (<Loading/>
