@@ -2,11 +2,11 @@
   "projects": [
     {
       "id": "3c36",
-      "name": "testando 1234",
+      "name": "testando 12345",
       "budget": "10000",
       "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
+        "id": "3",
+        "name": "Design"
       },
       "cost": 0,
       "services": []
