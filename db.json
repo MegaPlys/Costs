@@ -1,17 +1,6 @@
 {
   "projects": [
     {
-      "id": "3c36",
-      "name": "testando 12345",
-      "budget": "10000",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
       "id": "aeb7",
       "name": "projeto editado",
       "budget": "900",
