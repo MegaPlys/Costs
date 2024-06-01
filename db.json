@@ -8,8 +8,15 @@
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 0,
-      "services": []
+      "cost": 150,
+      "services": [
+        {
+          "name": "dev frontend",
+          "description": "teste serviço ",
+          "cost": "150",
+          "id": "30e8560b-f565-47ab-8e77-30b6f3b023d4"
+        }
+      ]
     }
   ],
   "categories": [
